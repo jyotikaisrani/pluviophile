@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your order</title>
+</head>
+<link rel="stylesheet" href="track your order.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+<script src="trackyourorder.js"></script>
+<body>
+    <div class="topnav">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Track your order">Track your order</a>
+        <a href="#About">About</a>
+        <a href="#Contact us">Contact us</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <ul>
+        <div>
+          <h1>TRACK YOUR ORDER</h1>
+          
+        </div>
+        
+          <div class="progress">
+          <li>
+              <img src="shopfin.png"><br>
+              <i class="far fa-check-circle"></i>
+              <p>Select item</p>
+          </li>
+          <li>
+            <img src="add to cart.png"><br>
+            <i class="far fa-check-circle"></i>
+            <p>Add to cart</p>
+        </li>
+        <li>
+            <img src="j3.png"><br>
+            <i class="fas fa-sync-alt"></i>
+            <p>Fill details</p>
+        </li>
+        <li>
+            <img src="j4.png"><br>
+            <i class="fas fa-sync-alt"></i>
+             <p>Make Payment</p>
+        </li>
+        <li>
+            <img src="j5.jpg"><br>
+            <i class="fas fa-sync-alt"></i>
+           <p>Download e-book</p>
+        </li>
+      </ul>
+    </div>
+    <div id="myProgress">
+      <h1> Progress Bar</h1>
+      <div id="myBar"></div>
+    </div>
+    <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+      </div>
+    
+      <div class="container">
+        <h1>CHECK IN</h1>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+</body>
+</html>
